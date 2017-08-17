@@ -15,7 +15,7 @@ The key features that should be delivered and a detailed description of them are
 
 ## Campaign Creation
 
-A Campaign is a story told while playing any RPG game, so, every other feature exist to complement this one. Campaign are made of adventures and adventures are made of events.
+A Campaign is a story told while playing any RPG game, so, every other feature exist to complement this one. Campaigns are made of adventures and adventures are made of events.
 
 ### Events
 
@@ -41,7 +41,7 @@ Campaigns should be displayed in a timeline manner, so that the user can clearly
 
 ## Bestiary
 
-One of the things unique to RPG games is the enemies, being them monsters, humans or even traps, players face throughout their adventures. Since GMs are always creating and using many kinds of enemies this feature is a must have. A GM should be able to register monster in a bestiary, which is a database for the enemies used in a Campaign, so that they can be easily referenced to. They also can be used in any future endeavor.
+One of the things unique to RPG games is the enemies, being them monsters, humans or even traps, players face throughout their adventures. Since GMs are always creating and using many kinds of enemies this feature is a must have. A GM should be able to register monsters in a bestiary, which is a database for the enemies used in a Campaign, so that they can be easily referenced to. They also can be used in any future endeavor.
 
 ### Enemies
 
@@ -61,7 +61,7 @@ To stimulate sharing and reuse, a capability of importing/exporting enemies from
 
 ## Item Vault
 
-Acquiring (magic) items often are one of the reasons many players keep coming session after session, and they play an important role in most, if not all, RPG systems. That's why they deserve a special attention and some features related to them. It ought to work in a very similar way to the Bestiary.
+Acquiring (magic) items often is one of the reasons many players keep coming session after session, and they play an important role in most, if not all, RPG systems. That's why they deserve a special attention and some features related to them. It ought to work in a very similar way to the Bestiary.
 
 ### Items
 
@@ -73,7 +73,7 @@ This was though as more of a support system so that GMs can easily manage the in
 
 ## Encyclopedia
 
-Playing an RPG game requires handling a lot of information, so, the goal of having an Encyclopedia is to simplify that. Having a wiki format with easy editing and formatting is strongly desired. Fields form player and GM annotations are also required, as well as integration with other systems, so that, enemies, players, places and so can be linked to encyclopedia entries.
+Playing an RPG game requires handling a lot of information, so, the goal of having an Encyclopedia is to simplify that. Having a wiki format with easy editing and formatting is strongly desired. Fields for player and GM annotations are also required, as well as integration with other systems, so that, enemies, players, places and so can be linked to encyclopedia entries.
 
 ## Random Tables
 

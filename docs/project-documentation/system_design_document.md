@@ -49,7 +49,7 @@ Not everything has to contain QT exclusive code. However, its compiler should be
 
 #### Editor and IDE
 
-Atom is the main editor used. It provides all the basic functionality required. However, for the editing of the QT files, QT creator is required. It has semantic checking of the reserved words, as well as built-in testing and compiling output.
+Atom is the main editor used. It provides all the basic functionality required. QT creator is the chosen IDE. It has semantic checking of the reserved words used in QT, as well as built-in testing and compiling output.
 
 #### Version Control
 
