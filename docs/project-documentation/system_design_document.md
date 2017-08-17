@@ -157,4 +157,4 @@ This will be the class responsible for creating new nodes, receiving inputs from
 
 This will be the widget responsible for housing the tools necessary for the creation of the campaigns. As well as the display of the events.
 
-![campaingCreation Class Diagram](diagrams\campaingCreation.png)
+![campaingCreation Class Diagram](diagrams/campaingCreation.png)
