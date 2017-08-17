@@ -1,0 +1,94 @@
+@startuml
+
+Node <|-- Event
+Node <|-- Adventure
+Node <|-- Campaign
+
+Event <|-- EventGeneric
+
+Campaign -[hidden]> Adventure
+Adventure -[hidden]> Event
+
+CampaignType "1" o-right- "1" Campaign
+
+NodeSpace "1" o-left-- "1" Node
+NodeSpace "1" ---o "*" Node
+AdjacencyMatrix "1" o-- "1" NodeSpace
+
+NodeFactory -up-> EventGeneric
+NodeFactory -up-> Adventure
+NodeFactory -up-> Campaign
+
+NodeFactory <- CampaignCreationWidget
+CampaignCreationWidget -up-> NodeSpace
+
+class AdjacencyMatrix {
+  - mMatrix : vector<vector<int>>
+  --
+  - AdjacencyMatrix()
+  - InitializeMatrix() : void
+  ..
+  + RemoveElement(int) : void
+  + AddElementAfter(int, int) : void
+  + MoveElementToAfter(int, int) : void
+}
+
+class Adventure {
+  - mNotes : string
+  + Adventure()
+}
+
+class Campaign {
+  - mType : CampaignType
+  - mSummary : string
+  + Campaign()
+}
+
+class CampaignCreationWidget << W, lightGreen >> {
+  - mCurrentNodeSpace : NodeSpace*
+  + CreateCampaign() : Campaign
+  + CreateAdventure() : Adventure
+  + CreateEventGeneric() : EventGeneric
+}
+
+class Event {
+  - mReadAloudText : string
+  # Event()
+}
+
+class EventGeneric {
+  + EventGeneric()
+}
+
+class Node {
+  - mName : string
+  - mDescription: string
+  - mNodeSpace : NodeSpace
+  # Node(mName, mDescription)
+}
+
+class NodeFactory {
+  - NodeFactory()
+  ..
+  + {static} CreateCampaign() : Campaign
+  + {static} CreateAdventure() : Adventure
+  + {static} CreateEventGeneric() : EventGeneric
+}
+
+class NodeSpace {
+  - mAdjacencyMatrix : AdjacencyMatrix
+  - mNodes : vector<Node*>
+  --
+  - InitializeNodeSpace() : void
+  ..
+  + NodeSpace()
+  + RemoveNode(Node*) : void
+  + AddNodeAfter(Node*, Node* = NULL) : void
+  + MoveNodeToAfter(Node*, Node* = NULL) : void
+}
+
+enum CampaignType {
+  GENERAL
+}
+
+@enduml
