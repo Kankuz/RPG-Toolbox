@@ -19,7 +19,7 @@ It intends to do so offering several features that are constantly used by GMs an
 
 ### General Workflow
 
-Work on the project is going to be iterative. Which means, everything, especially documents, is going to be revised at regular intervals. The main goal is to create an growing software, that, when receiving new inputs and requirements, can adapt as needed. Even the products description and requirements are likely to change in due time.
+The work on the project is going to be iterative. Which means, everything, especially documents, is going to be revised at regular intervals. The main goal is to create an growing software, that, when receiving new inputs and requirements, can adapt as needed. Even the products description and requirements are likely to change in due time.
 
 Therefore, attention is required at all steps, and adaptability is a key issue. All software must be made with this in mind. As requirements grow, new features ought to be added, and some of them maybe removed. So, modularity is a must have on everything.
 
@@ -31,7 +31,7 @@ As documents get revised and new features are required, code should be revised a
 
 It was thought of an OOP design. It works greatly with most of the requirements (that have clear objects), and can be extendable to many other functions required, as imports, exports, displaying objects on the screen and the storage of information.
 
-Web development was put aside due to the limitations on opening the software without an active internet connection and to the absent of natural interaction with the OS. So a native application was required. The chosen language was C++. It offers great OOP features as well as many other capabilities that suit the problem well.
+Web development was put aside due to its limitations. Opening the software without an active internet connection would not be possible and the lack of natural interaction with the OS was a big downfall. So a native application was required. The chosen language was C++. It offers great OOP features as well as many other capabilities that suit the problem well.
 
 Since the software is clearly separated into different systems, that distinction will be very useful in achieving modularity. Therefore, they will be enforced in the design and their connection should be made only when necessary. Another main system will be necessary to handle the interaction of the others and to work as a wrapper for the others.
 
@@ -43,9 +43,9 @@ A model/view architecture will be used to separate the information, in model cla
 
 The first major decision was on how to tackle the creation of a GUI without using web development. So, a library for creating GUI applications was required and the chosen one was **QT5**.
 
-QT offers several advantages, which include: can be used in C++; supports OOP design; works as a complete framework with multiple useful modules and features. It has everything needed to develop, document and test the whole software and thus, shall be used as primary framework.
+QT offers several advantages, which include: can be used in C++; supports OOP design; works as a complete framework with multiple useful modules and features. It has everything needed to develop, document and test the whole software and thus, shall be used as the primary framework.
 
-Not everything has to contain QT exclusive code. However, its compiler should be used equally across all the program so that we can achieve similar results and reduce complexity. Since QT files require additional compilation, that should be avoided when possible.
+Since using QT imported classes adds more complexity to the system, they shall only be used when necessary. However, the same compiler and compiling steps should be used across the whole software for standardization.
 
 #### Editor and IDE
 
@@ -57,7 +57,7 @@ Git was chosen for the version control system. Everything is kept on a central r
 
 #### Testing and integration
 
-Travis CI is going to be used to automate the tests and ensure builds are passing, as well as the required tests. It should trigger with every commit so that status on the software is always updated.
+Travis CI is going to be used to automate the tests and ensure builds are passing, as well as the required tests. It should trigger with every commit so that the status of the software is always updated.
 
 ### List of systems
 
@@ -137,7 +137,7 @@ A generic type of event with no special features.
 
 ###### Adventure
 
-Adventures are a type of node. They must have and adventure notes field.
+Adventures are a type of node. They must have an adventure notes field.
 
 ###### Campaign
 

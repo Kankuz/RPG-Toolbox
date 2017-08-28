@@ -41,7 +41,7 @@ Campaigns should be displayed in a timeline manner, so that the user can clearly
 
 ## Bestiary
 
-One of the things unique to RPG games is the enemies, being them monsters, humans or even traps, players face throughout their adventures. Since GMs are always creating and using many kinds of enemies this feature is a must have. A GM should be able to register monsters in a bestiary, which is a database for the enemies used in a Campaign, so that they can be easily referenced to. They also can be used in any future endeavor.
+One of the things unique to RPG games is the enemies, being them monsters, humans or even traps, players face throughout their adventures. Since GMs are always creating and using many kinds of enemies this feature is a must have. A GM should be able to register monsters in a bestiary, which is a database for the enemies used in a Campaign, so that they can be easily referenced to. They also can be used in any future endeavors.
 
 ### Enemies
 
@@ -77,7 +77,7 @@ Playing an RPG game requires handling a lot of information, so, the goal of havi
 
 ## Random Tables
 
-It is impossible to be creative 100% of the time so having somewhere to look for ideas is a must. Also, sometimes a GM might need to create something on the fly. To accomplish that, a set o pre-built random tables of various subjects should be available and fully integrated with the encyclopedia, so that one can create a new entry from random info. The user should also be able to create new tables for their personal taste.
+It is impossible to be creative 100% of the time so having somewhere to look for ideas is a must have. Also, sometimes a GM might need to create something on the fly. To accomplish that, a set of pre-built random tables of various subjects should be available and fully integrated with the encyclopedia, so that one can create a new entry from random info. The user should also be able to create new tables for their personal taste.
 
 ## Virtual tabletop
 
