@@ -1,14 +1,14 @@
 # RPG Toolbox
 RPG Toolbox is a program designed to help GMs and Players in the various aspects of playing RPG tabletop games.
 
-For more information the [Full Project Description](/doc/Project%20Documentation/Software%20Description.md).
+For more information the [Full Project Description](docs/project-documentation/software_description.md ).
 
 ## Built with
 * QT 5.9 - Main framework
 * MinGW 5.3 - Compiler
 
 ## Authors
-- Raul de Queiroz - raulqueiroz13@gmail.com
+- Raul de Queiroz - raulqueiroz@live.com
 
 ## License
 Copyright (C) 2017  Raul de Queiroz
