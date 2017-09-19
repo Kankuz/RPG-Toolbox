@@ -11,6 +11,12 @@
 *.dylib
 *.exe
 
+# gcc coverage testing tool files
+
+*.gcno
+*.gcda
+*.gcov
+
 # Qt-es
 
 /.qmake.cache

@@ -1,0 +1,2 @@
+qmake "CONFIG += travis_ci"
+make

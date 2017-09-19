@@ -12,9 +12,17 @@ debug:RCC_DIR = build/debug/.rcc
 debug:UI_DIR = build/debug/.ui
 debug:PRECOMPILED_DIR = build/debug
 
+travis_ci {
+  DEFINES += IS_TRAVIS
+}
+
 QT += core gui widgets
 TEMPLATE = app
 CONFIG += c++11
+
+# gcov
+QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+LIBS += -lgcov
 
 include(src/main-window/main-window.pri)
 
