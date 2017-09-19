@@ -1,4 +1,4 @@
-# RPG Toolbox
+# RPG Toolbox [![Build Status](https://travis-ci.org/Kankuz/RPG-Toolbox.svg?branch=develop)](https://travis-ci.org/Kankuz/RPG-Toolbox)
 RPG Toolbox is a program designed to help GMs and Players in the various aspects of playing RPG tabletop games.
 
 For more information the [Full Project Description](docs/project-documentation/software_description.md ).
