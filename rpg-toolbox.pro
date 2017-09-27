@@ -16,14 +16,19 @@ travis_ci {
   DEFINES += IS_TRAVIS
 }
 
-QT += core gui widgets
-TEMPLATE = app
-CONFIG += c++11
+unitTest {
+  TEMPLATE = subdirs
+  SUBDIRS += \
+      ./src/campaign-creation/tests/campaignTest
+} else {
+  QT += core gui widgets
+  TEMPLATE = app
+  CONFIG += c++11
+
+  include(src/main-window/main-window.pri)
+  SOURCES += src/main.cpp
+}
 
 # gcov
 QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
-
-include(src/main-window/main-window.pri)
-
-SOURCES += src/main.cpp
