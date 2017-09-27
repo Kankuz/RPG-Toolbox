@@ -1,4 +1,4 @@
-#include "..\headers\node.hpp"
+#include "../headers/node.hpp"
 
 Node::Node(std::string name, std::string description):
   mName(name), mDescription(description) {

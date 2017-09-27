@@ -24,8 +24,10 @@ unitTest {
   QT += core gui widgets
   TEMPLATE = app
   CONFIG += c++11
+  QMAKE_CXXFLAGS += -std=c++11
 
   include(src/main-window/main-window.pri)
+  include(src/campaign-creation/campaign-creation.pri)
   SOURCES += src/main.cpp
 }
 

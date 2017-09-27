@@ -3,21 +3,26 @@ sudo: required
 
 language: cpp
 
+
 before_install:
   - sudo pip install codecov
   - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
-  - sudo apt-get update -qq
   - sudo apt-get install -qq qt5-qmake qtbase5-dev
+  - sudo apt-get update -qq
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3 # give xvfb some time to start
+  # cchmods
   - chmod +x ./scripts/get_code_cov
   - chmod +x ./scripts/build_travis
+  - chmod +x ./scripts/build_unit_tests
 
 script:
   - qmake -qt=qt5 -v
   - scripts/build_travis
   - ./bin/debug/rpg-toolbox
+  - make distclean
+  - ./scripts/build_unit_tests
   - ./scripts/get_code_cov
   - codecov
 

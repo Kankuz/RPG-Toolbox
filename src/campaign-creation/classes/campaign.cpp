@@ -1,4 +1,4 @@
-#include "..\headers\campaign.hpp"
+#include "../headers/campaign.hpp"
 
 Campaign::Campaign():
   Node("", ""), mSummary(""),
