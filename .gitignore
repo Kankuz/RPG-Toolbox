@@ -31,6 +31,7 @@ qrc_*.cpp
 ui_*.h
 Makefile*
 *-build-*
+target_wrapper.*
 
 # QtCreator
 
