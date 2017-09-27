@@ -19,7 +19,8 @@ travis_ci {
 unitTest {
   TEMPLATE = subdirs
   SUBDIRS += \
-      ./src/campaign-creation/tests/campaignTest
+      ./src/campaign-creation/tests/campaignTest \
+      ./src/campaign-creation/tests/adventureTest
 } else {
   QT += core gui widgets
   TEMPLATE = app
