@@ -26,7 +26,8 @@ unitTest {
   TEMPLATE = subdirs
   SUBDIRS += \
       ./src/campaign-creation/tests/campaignTest \
-      ./src/campaign-creation/tests/adventureTest 
+      ./src/campaign-creation/tests/adventureTest \
+      ./src/campaign-creation/tests/eventGenericTest
 } else {
   QT += core gui widgets
   TEMPLATE = app
