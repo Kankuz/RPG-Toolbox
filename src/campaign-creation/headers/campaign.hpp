@@ -2,7 +2,6 @@
 
 #include "node.hpp"
 #include "campaignType.hpp"
-#include <string>
 
 
 class Campaign : public Node {

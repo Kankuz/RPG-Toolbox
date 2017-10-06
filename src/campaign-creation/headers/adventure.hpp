@@ -1,7 +1,6 @@
 #pragma once
 
 #include "node.hpp"
-#include <string>
 
 class Adventure : public Node {
 private:
