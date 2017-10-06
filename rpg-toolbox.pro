@@ -14,13 +14,19 @@ debug:PRECOMPILED_DIR = build/debug
 
 travis_ci {
   DEFINES += IS_TRAVIS
+} else {
+  QMAKE_CLEAN += ./build/release/.obj/*.gcno \
+    ./build/release/.obj/*.gcda
+
+  QMAKE_DISTCLEAN += ./build/release/.obj/*.gcno \
+    ./build/release/.obj/*.gcda
 }
 
 unitTest {
   TEMPLATE = subdirs
   SUBDIRS += \
       ./src/campaign-creation/tests/campaignTest \
-      ./src/campaign-creation/tests/adventureTest
+      ./src/campaign-creation/tests/adventureTest 
 } else {
   QT += core gui widgets
   TEMPLATE = app

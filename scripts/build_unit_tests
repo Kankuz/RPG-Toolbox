@@ -1,3 +1,2 @@
 qmake "CONFIG += unitTest"
-make
-make check
+make check -s
