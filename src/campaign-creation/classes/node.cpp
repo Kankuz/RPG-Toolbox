@@ -4,6 +4,8 @@ Node::Node(std::string name, std::string description):
   mName(name), mDescription(description) {
 }
 
+Node::~Node() {}
+
 std::string Node::getDescription() {
   return mDescription;
 }

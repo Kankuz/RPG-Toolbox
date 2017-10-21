@@ -11,6 +11,7 @@ protected:
   Node(std::string name, std::string description);
 
 public:
+  virtual ~Node();
   std::string getDescription();
   std::string getName();
   void setDescription(std::string description);

@@ -19,9 +19,11 @@ int NodeSpace::getPosition(Node *node) {
 }
 
 bool NodeSpace::isConnected(Node *from, Node *to) {
-  int positionFrom = getPosition(from);
-  int positionTo = getPosition(to);
-  return mAdjacencyMatrix.isConnected(positionFrom, positionTo);
+  if(getConnection(from, to) == ConnectionType::NO_CONNECTION) {
+    return false;
+  } else {
+    return true;
+  }
 }
 
 void NodeSpace::addNode(Node *node) {
