@@ -29,7 +29,8 @@ unitTest {
       ./src/campaign-creation/tests/adventureTest \
       ./src/campaign-creation/tests/eventGenericTest \
       ./src/campaign-creation/tests/adjacencyMatrixTest \
-      ./src/campaign-creation/tests/nodeSpaceTest
+      ./src/campaign-creation/tests/nodeSpaceTest \
+      ./src/campaign-creation/tests/nodeFactoryTest
 } else {
   QT += core gui widgets
   TEMPLATE = app
